@@ -6,3 +6,12 @@ body {
 h2, h3 {
     color: #2E2F42;
 }
+
+.main-button {
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+}
+
+.main-button:hover {
+    background-color: #404BBF;
+} 
