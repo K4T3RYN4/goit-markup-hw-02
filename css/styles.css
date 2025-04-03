@@ -38,7 +38,7 @@ body {
     font-style: normal;
 }
 
-.address-list-item a{
+.address-list-item {
     color: #434455;
     text-decoration: none;
     font-weight: 400;
@@ -47,7 +47,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.address-list-item a:hover, .address-list-item a:focus {
+.address-list-item:hover, .address-list-item:focus {
     color: #404BBF;
 }
 /* #endregion header */
