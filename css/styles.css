@@ -4,6 +4,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
 /* #region header */
 .logo {
     color: #4D5AE5;
