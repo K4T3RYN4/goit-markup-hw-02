@@ -1,7 +1,26 @@
+/* #region main styles */
+:root {
+    --iris: #4D5AE5;
+    --ocean: #404BBF;
+    --navy-blue: #2E2F42;
+    --green: #31D0AA;
+    --slate: #434455;
+    --light-slate: #8E8F99;
+    --cornflower: #E7E9FC;
+    --cloud: #F4F4FD;
+    --navy-blue-modal: rgba(46, 47, 66, 40); 
+    --grey: rgba(46, 47, 66, 70);
+    --white: #FFFFFF;
+    --dairy: #FCFCFC;
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+}
+/* #endregion main styles */
+
 body {
-    background-color: #FFFFFF;
-    color: #434455;
-    font-family: "Roboto", sans-serif;
+    background-color: var(--white);
+    color: var(--slate);
+    font-family: var(--font-family);
 }
 
 ul {
@@ -10,8 +29,8 @@ ul {
 
 /* #region header */
 .logo {
-    color: #4D5AE5;
-    font-family: "Raleway", sans-serif;
+    color: var(--iris);
+    font-family: var(--second-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -20,12 +39,12 @@ ul {
     text-decoration: none;
 }
 
-.logo-accent {
-    color: #2E2F42;
+.logo-accent-dark {
+    color: var(--navy-blue);
 }
 
 .nav-list-item {
-    color: #2E2F42;
+    color: var(--navy-blue);
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
@@ -35,7 +54,7 @@ ul {
 
 .nav-list-item:hover, 
 .nav-list-item:focus {
-    color: #404BBF;
+    color: var(--ocean);
 }
 
 .address {
@@ -43,7 +62,7 @@ ul {
 }
 
 .address-list-item {
-    color: #434455;
+    color: var(--slate);
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -52,17 +71,17 @@ ul {
 }
 
 .address-list-item:hover, .address-list-item:focus {
-    color: #404BBF;
+    color: var(--ocean);
 }
 /* #endregion header */
 
 /* #region wellcome section */
 .wellcome-section {
-    background-color: #2E2F42;
+    background-color: var(--navy-blue);
 }
 
 .wellcome-header {
-    color: #FFFFFF;
+    color: var(--white);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -71,8 +90,8 @@ ul {
 }
 
 .main-button {
-    color: #FFFFFF;
-    background-color: #4D5AE5;
+    color: var(--white);
+    background-color: var(--iris);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -82,21 +101,21 @@ ul {
 
 .main-button:hover,
 .main-button:focus {
-    background-color: #404BBF;
+    background-color: var(--ocean);
 }
 /* #endregion wellcome section */
 
 /* #region features-info section */
-.features-list-item h3 {
-    color: #2E2F42;
+.feature-name {
+    color: var(--navy-blue);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
-.features-list-item p {
-    color: #434455;
+.feature-descr {
+    color: var(--slate);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -106,11 +125,11 @@ ul {
 
 /* #region team section */
 .team-section {
-    background-color: #F4F4FD;
+    background-color: var(--cloud);
 }
 
 .team-header {
-    color: #2E2F42;
+    color: var(--navy-blue);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -120,11 +139,11 @@ ul {
 }
 
 .team-list-item {
-    background-color: #FFFFFF;
+    background-color: var(--white);
 }
 
-.team-list-item h3 {
-    color: #2E2F42;
+.teammate-name {
+    color: var(--navy-blue);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -132,8 +151,8 @@ ul {
     text-align: center;
 }
 
-.team-list-item p {
-    color: #434455;
+.teammate-position {
+    color: var(--slate);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -144,7 +163,7 @@ ul {
 
 /* #region portfolio section */
 .portfolio-header {
-    color: #2E2F42;
+    color: var(--navy-blue);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -153,16 +172,16 @@ ul {
     text-transform: capitalize;
 }
 
-.portfolio-list-item h3 {
-    color: #2E2F42;
+.portfolio-thing {
+    color: var(--navy-blue);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
-.portfolio-list-item p {
-    color: #434455;
+.portfolio-thing-descr {
+    color: var(--slate);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -172,15 +191,15 @@ ul {
 
 /* #region footer */
 .footer {
-    background-color: #2E2F42;
+    background-color: var(--navy-blue);
 }
 
 .logo-accent-light {
-    color: #f4f4fd;
+    color: var(--cloud);
 }
 
-.footer p {
-    color: #F4F4FD;
+.end-text {
+    color: var(--cloud);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
